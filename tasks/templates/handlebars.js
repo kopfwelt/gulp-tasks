@@ -1,8 +1,7 @@
-
-import gulp from 'gulp'
-import notify from 'gulp-notify'
-import hb from 'gulp-hb'
-import rename from 'gulp-rename'
+const gulp = require('gulp');
+const notify = require('gulp-notify');
+const hb = require('gulp-hb');
+const rename = require('gulp-rename');
 
 gulp.task('handlebars', () => {
 	return gulp.src('src/templates/index.hbs')
@@ -15,7 +14,7 @@ gulp.task('handlebars', () => {
 		}))
 		.on('error', notify.onError(error => `Handlebars error: ${error}`))
 		.pipe(rename({
-			extname: ".html"
+			extname: '.html'
 		}))
-		.pipe(gulp.dest('examples'))
-})
+		.pipe(gulp.dest('examples'));
+});
