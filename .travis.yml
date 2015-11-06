@@ -2,8 +2,8 @@ sudo: false
 language: node_js
 node_js:
   - '5.0'
-  - '4.2'
-  - '4.1'
+#  - '4.2'
+#  - '4.1'
   - '4.0'
   - '0.12'
 
@@ -12,10 +12,12 @@ branches:
   only:
     - master
 
-before_install:
+#before_install:
+#  -
+before_script:
   - npm install -g gulp xo babel
-install: npm install
-#before_script: grunt build
+# install: npm install
+
 
 notifications:
   email:
