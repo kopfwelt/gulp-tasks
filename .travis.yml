@@ -1,0 +1,13 @@
+sudo: false
+language: node_js
+node_js:
+  - '0.12'
+
+# whitelist
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    - steve@kopfwelt.com

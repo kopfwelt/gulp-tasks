@@ -16,7 +16,7 @@ const path = require('path');
 
 require('../../../../tasks/templates/handlebars');
 
-const outpath = path.join(__dirname, '../../out-fixtures');
+const outpath = path.join(__dirname, '../../.tmp');
 
 const tempFileContent = 'A test generated this file and it is safe to delete';
 

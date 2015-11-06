@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "test": "xo;mocha --recursive test/unit/tests --reporter spec --require babel-core/register;"
+    "test": "xo;mocha --recursive test/unit/specs --reporter spec --require babel-core/register;"
   },
   "babel": {
     "presets": [
