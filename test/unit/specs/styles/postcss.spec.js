@@ -7,7 +7,6 @@ const before = mocha.before;
 const after = mocha.after;
 
 const chai = require('chai');
-chai.use(require('chai-fs'));
 const expect = chai.expect;
 
 const gulp = require('gulp');
@@ -44,7 +43,8 @@ describe('gulp tasks styles', () => {
 
 					const expectedPath = path.join(expexted, 'test.css');
 					const expectedContent = fs.readFileSync(expectedPath, 'utf8');
-					expect(compiledFilePath).to.have.content(expectedContent, 'File content should be the same as the test file');
+					const compiledContent = fs.readFileSync(compiledFilePath, 'utf8');
+					expect(compiledContent).to.equal(expectedContent, 'File content should be the same as the test file');
 
 					done();
 				});
