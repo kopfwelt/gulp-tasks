@@ -32,9 +32,9 @@ function updateTempFile(path) {
 }
 
 describe('handlebars gulp task', () => {
-	// beforeEach(rimraf.bind(null, outpath));
-	// beforeEach(mkdirp.bind(null, outpath));
-	// afterEach(rimraf.bind(null, outpath));
+	beforeEach(rimraf.bind(null, outpath));
+	beforeEach(mkdirp.bind(null, outpath));
+	afterEach(rimraf.bind(null, outpath));
 
 	it('should be registered as gulp tasks', () => {
 		expect(gulp.tasks.handlebars).to.be.an('object');
