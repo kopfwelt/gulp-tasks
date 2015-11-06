@@ -32,9 +32,9 @@ function updateTempFile(path) {
 }
 
 describe('handlebars gulp task', () => {
-	beforeEach(rimraf.bind(null, outpath));
-	beforeEach(mkdirp.bind(null, outpath));
-	afterEach(rimraf.bind(null, outpath));
+	// beforeEach(rimraf.bind(null, outpath));
+	// beforeEach(mkdirp.bind(null, outpath));
+	// afterEach(rimraf.bind(null, outpath));
 
 	it('should be registered as gulp tasks', () => {
 		expect(gulp.tasks.handlebars).to.be.an('object');
@@ -56,7 +56,12 @@ describe('handlebars gulp task', () => {
 		updateTempFile(tempFile);
 	});
 
-	it('should change postfix to .html', done => {
-		done();
+	it('should change postfix to .html', () => {
+		// const testFile = path.join(__dirname, '../../out-fixtures/test.html');
+		// expect(path.extname(testFile)).
+		// console.log(fs.lstatSync(testFile));
+		// expect(fs.existsSync(testFile)).to.be.true();
+		// read directory an check for files
+		// then check contents
 	});
 });
