@@ -5,15 +5,44 @@
 
 ## Install
 
-<!-- Install with [npm](https://npmjs.org/package/gulp-useref)
-
-```
-npm install --save-dev gulp-useref
-```
- -->
-
 Install from [github](https://github.com/kopfwelt/gulp-tasks) using npm
 
 ```
 npm install --save-dev kopfwelt/gulp-tasks
+```
+
+## Tasks
+
+Tasks are devided into main tasks that provide a facade to subtasks.
+
+* Templates
+  * [Handlebars](#task-handlebars)
+
+### Templates
+
+#### <a name="task-handlebars"></a>Handlebars `'handlebars'`
+Compiles handlebars templates to html using [layouts](https://www.npmjs.com/package/handlebars-layouts) and [i18next](http://i18next.com/pages/doc_templates.html) helpers.
+
+Usage
+
+```
+gulp.task('templates', ['handlebars']);
+```
+
+Config
+
+```
+{
+	"templates" : {
+		"handlebars" : {
+		}
+	}
+}
+```
+
+## Tests
+Basic tests using mocha, chai:
+
+```
+npm test
 ```

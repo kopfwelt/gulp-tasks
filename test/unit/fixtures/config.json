@@ -1,0 +1,23 @@
+{
+  "root": {
+    "src": "./src",
+    "dest": "./public"
+  },
+  "tasks": {
+    "templates": {
+        "handlebars": {
+            "src": "test/unit/fixtures/templates/handlebars/*.hbs",
+            "dest": "test/unit/.tmp",
+            "partials": [
+              "test/unit/fixtures/templates/handlebars/partials/**/*.hbs"
+            ]
+        }
+    },
+    "styles": {
+        "postcss": {
+            "src": "test/unit/fixtures/styles/**/*.scss",
+            "dest": "test/unit/.tmp/css"
+        }
+    }
+  }
+}
