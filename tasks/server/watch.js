@@ -15,7 +15,7 @@ const watchTask = () => {
 	//     });
 	//   }
 	// });
-	const glob = path.join(config.root.src, '**/*.js,html,xml}');
+	const glob = path.join(config.root.src, '**/*.{js,html,xml}');
 	watch(glob);
 };
 
