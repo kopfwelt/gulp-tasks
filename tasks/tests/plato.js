@@ -4,7 +4,7 @@ const gulp = require('gulp');
 const plato = require('plato');
 const path = require('path');
 
-const config = require(`${__configpath}config`);
+const config = require(process.env.GULP_CONFIG);
 
 const paths = {
 	src: path.join(config.root.src, config.tasks.scripts.src),

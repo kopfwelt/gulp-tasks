@@ -5,7 +5,7 @@ const notify = require('gulp-notify');
 const hb = require('gulp-hb');
 const layouts = require('handlebars-layouts');
 const rename = require('gulp-rename');
-const config = require(`${__configpath}config`);
+const config = require(process.env.GULP_CONFIG);
 
 const handlebarsTask = () => {
 	// register layouts helper

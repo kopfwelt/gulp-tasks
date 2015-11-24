@@ -6,7 +6,7 @@ const autoprefixer = require('autoprefixer');
 const nestedcss = require('postcss-nested');
 const rename = require('gulp-rename');
 
-const config = require(`${__configpath}config`);
+const config = require(process.env.GULP_CONFIG);
 
 gulp.task('postcss', () => {
 	const processors = [

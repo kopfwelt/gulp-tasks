@@ -1,4 +1,4 @@
-const config = require(`${__configpath}config`);
+const config = require(process.env.GULP_CONFIG);
 const gulp = require('gulp');
 const path = require('path');
 const watch = require('gulp-watch');
