@@ -1,12 +1,10 @@
 const gulp = require('gulp');
-const browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync');
+const config = require(`${__configpath}config`);
 
-gulp.task('default', ['templates', 'styles', 'scripts'], () => {
-	browserSync.init({
-		notify: false,
-		port: 9000,
-		server: {
-			baseDir: ['examples']
-		}
-	});
-});
+const browserSyncTask = () => {
+	browserSync.init(config.tasks.browserSync);
+};
+
+gulp.task('browserSync', browserSyncTask);
+module.exports = browserSyncTask;

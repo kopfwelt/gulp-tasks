@@ -41,7 +41,8 @@
       "no-unused-expressions": 0
     }
   },
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "autoprefixer": "^6.1.0",
     "babel-core": "^6.0.20",
     "babel-preset-es2015": "^6.0.15",
@@ -63,7 +64,5 @@
     "require-dir": "^0.3.0",
     "rimraf": "^2.4.3",
     "webdriverio": "^3.2.6",
-    "webpagetest": "^0.3.3"
-  },
-  "dependencies": {}
+    "webpagetest": "^0.3.3"}
 }
