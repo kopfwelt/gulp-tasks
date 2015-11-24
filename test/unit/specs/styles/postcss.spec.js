@@ -45,7 +45,7 @@ describe('gulp tasks styles', () => {
 					const expectedContent = fs.readFileSync(expectedPath, 'utf8');
 					const compiledContent = fs.readFileSync(compiledFilePath, 'utf8');
 					expect(compiledContent).to.equal(expectedContent, 'File content should be the same as the test file');
-
+					console.log('stop');
 					done();
 				});
 		});

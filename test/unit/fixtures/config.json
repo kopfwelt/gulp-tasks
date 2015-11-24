@@ -1,23 +1,30 @@
 {
-  "root": {
-    "src": "./src",
-    "dest": "./public"
-  },
-  "tasks": {
-    "templates": {
-        "handlebars": {
-            "src": "test/unit/fixtures/templates/handlebars/*.hbs",
-            "dest": "test/unit/.tmp",
-            "partials": [
-              "test/unit/fixtures/templates/handlebars/partials/**/*.hbs"
-            ]
-        }
-    },
-    "styles": {
-        "postcss": {
-            "src": "test/unit/fixtures/styles/**/*.scss",
-            "dest": "test/unit/.tmp/css"
-        }
-    }
-  }
+	"root": {
+		"src": "./test/unit/fixtures",
+		"dest": "./test/unit/.tmp"
+	},
+	"tasks": {
+		"scripts": {			
+			"src": "scripts/*.js",
+			"dest": "js"
+		},
+		"templates": {
+			"handlebars": {
+				"src": "test/unit/fixtures/templates/handlebars/*.hbs",
+				"dest": "test/unit/.tmp",
+				"partials": [
+					"test/unit/fixtures/templates/handlebars/partials/**/*.hbs"
+				],
+				"helpers": [
+					"npm_modules/gulp-tasks/templates/handlebars/helpers/.js"
+				]
+			}
+		},
+		"styles": {
+			"postcss": {
+				"src": "test/unit/fixtures/styles/**/*.scss",
+				"dest": "test/unit/.tmp/css"
+			}
+		}
+	}
 }

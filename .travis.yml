@@ -21,4 +21,4 @@ before_script:
 
 notifications:
   email:
-    - steve@kopfwelt.com
+    - kontrolle@kopfwelt.com
