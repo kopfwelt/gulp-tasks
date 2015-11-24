@@ -46,16 +46,6 @@
     }
   },
   "devDependencies": {},
-    "chai": "^3.4.0",
-    "graceful-fs": "^4.1.2",
-    "isparta": "^3.5.3",
-    "istanbul": "^0.4.0",
-    "mkdirp": "^0.5.1",
-    "mocha": "^2.3.3",
-    "mock-gulp-dest": "^0.1.1",
-    "require-dir": "^0.3.0",
-    "rimraf": "^2.4.3"
-  },
   "dependencies": {
     "autoprefixer": "^6.1.0",
     "babel-core": "^6.0.20",
@@ -73,6 +63,15 @@
     "plato": "^1.5.0",
     "postcss-nested": "^1.0.0",
     "webdriverio": "^3.2.6",
-    "webpagetest": "^0.3.3"
+    "webpagetest": "^0.3.3",
+    "chai": "^3.4.0",
+    "graceful-fs": "^4.1.2",
+    "isparta": "^3.5.3",
+    "istanbul": "^0.4.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "^2.3.3",
+    "mock-gulp-dest": "^0.1.1",
+    "require-dir": "^0.3.0",
+    "rimraf": "^2.4.3"
   }
 }
